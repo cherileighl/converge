@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}   
+
+    <header class="masthead" style="background-image: url('https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover;">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-lg-7 my-auto">
+              <div class="header-content mx-auto">
+                <h1 style="color: #242020;">Create Company Profile</h1>
+
+                <form name="form" action="{% url 'saveCompany' %}" method="post">
+                    {% csrf_token %}
+                    <!-- <label for="company_name">Company: </label> -->
+                    <input class="form-control" placeholder="Company Name" type="text" id="company_name" name="company_name"><br>
+            
+                    <!-- <label for="company_email">Company Email: </label> -->
+                    <input class="form-control" placeholder="Email" type="email" id="company_email" name="company_email"><br>
+            
+                    <!-- <label for="company_password">Password: </label> -->
+                    <input class="form-control" placeholder="Password" type="password" id="company_password" name="company_password"><br>
+            
+                    <!-- <label for="company_desc">Company Description: </label> -->
+                    <input class="form-control" placeholder="Description" type="text" id="company_desc" name="company_desc" height="200px">
+                    Already have an account? Sign in <a href="{% url 'loginCompany' %}" style="color:firebrick;">here</a>.
+                    
+                    <br><br>
+            
+                    <button type="submit" class="btn btn-dark">Create</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+{% endblock %}
+    

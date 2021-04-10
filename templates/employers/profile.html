@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940-->
+<header class="masthead" style="height: 300px; background-image: url('https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940ttps://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover;">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-lg-7 my-auto">
+                <div class="header-content mx-auto">
+                    <h1 style="text-align: center; font-size: 60px; font-weight: bolder; text-align: left;">Systems Planning & Analysis, Inc.</h1>
+                    <a href="{% url 'allApplicants' %}" class="btn btn-outline btn-xl js-scroll-trigger">Start Recruiting!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container" style="height:2000px;">
+    <div class="row" style="position:absolute; left:30px; padding-top:50px;">
+        <div class="col-md-3">
+            <img src="https://www.spacefoundation.org/wp-content/uploads/2018/01/SPA_Logo_2-300x160.png"
+                alt="company-name" class="company-logo">
+        </div>
+        <div class="col-md-8">
+            <h1>Systems Planning & Analysis, Inc.</h1>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                    <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                </svg>
+            </span>
+            <br><br>
+            <div class="container">
+                <div class="row">
+                    <!-- <p>{{ company.company_desc}}</p> -->
+                    <p>SPA provides knowledge-based solutions integrating technical, operational, programmatic, policy, and
+                        business solutions in support of important national security objectives.
+                        <br>
+                        For nearly 50 years, we have informed decisions that had strategic and lasting impacts on national security. Our clients entrust us with their critical missions. Every day our employees work to serve our Nation and we work to serve our employees. Every mission is personal to us. We foster continued growth by providing diverse experiences and encouraging employees to perfect their skills through training. This focus ensures SPA’s leaders of tomorrow can continue to renew the commitment we made to our very first client, and all our clients, adapting to support their evolving needs, while always adhering to our core values.
+                    </p>
+
+                    <!-- <span><em>{{company.company_email}}</em></span><br> -->
+                    <span><em>spa_recruiting@spa.com</em></span><br><br>
+                </div>
+
+                <div class="row">
+                    <h3>Current Jobs</h3>
+
+                    <div class="card applicant-card" style="margin:20px; z-index:2;" id="card-{{student.id}}">   
+                        <h5 class="card-header">
+                            Operations Analyst
+                            <button type="button" class="btn btn-danger" style="float:right;">Edit</button>
+                        </h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Description</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolor sit quibusdam vero quasi, et eum ea tempore corporis voluptatum consectetur vitae cumque ad aliquid, adipisci quas praesentium saepe natus?</p>
+    
+                            <h5 class="card-title">Minimum Qualifications</h5>
+                            <ul class="card-text">
+                                <li>3.75 GPA</li>
+                                <li>6+ months experience with model and simulation</li>
+                                <li>Security clearance</li>
+                            </ul>
+    
+                            <h5 class="card-title">Start Date</h5>
+                            <p class="card-text">June 7, 2021</p>
+                            
+                            <h5 class="card-title">Hourly Rate</h5>
+                            <p class="card-text">$20.00</p>                               
+                        </div>
+                    </div>
+
+                    <div class="card applicant-card" style="margin:20px; z-index:2;" id="card-{{student.id}}">   
+                        <h5 class="card-header">
+                            Web Developer Intern
+                            <button type="button" class="btn btn-danger" style="float:right;">Edit</button>
+                        </h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Description</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolor sit quibusdam vero quasi, et eum ea tempore corporis voluptatum consectetur vitae cumque ad aliquid, adipisci quas praesentium saepe natus?</p>
+    
+                            <h5 class="card-title">Minimum Qualifications</h5>
+                            <ul class="card-text">
+                                <li>3.75 GPA</li>
+                                <li>6+ months experience with model and simulation</li>
+                                <li>Security clearance</li>
+                            </ul>
+    
+                            <h5 class="card-title">Start Date</h5>
+                            <p class="card-text">June 7, 2021</p>
+                            
+                            <h5 class="card-title">Hourly Rate</h5>
+                            <p class="card-text">$20.00</p>                               
+                        </div>
+                    </div>
+                    <br>
+
+                    <button type="button" class="btn btn-dark" style="float:left;">Post New Job</button>
+
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+{% endblock %}

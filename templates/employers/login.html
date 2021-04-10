@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<header class="masthead" style="background-image: url('https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover;">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 style="color: #242020;">Log In As Employer</h1>
+
+            <form name="form" action="{% url 'companyProfile' %}" method="post">
+                {% csrf_token %}
+                <input class="form-control" type="email" id="company_email" name="company_email" placeholder="Email"><br>
+        
+                <input class="form-control" type="password" id="company_password" name="company_password" placeholder="Password">
+                Don't have an account yet? Create one <a href="{% url 'createCompany' %}" style="color:firebrick;">here</a>.
+                <br><br>
+                <button type="submit" class="btn btn-dark">Log In</a>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>  
+
+{% endblock %}
+    
